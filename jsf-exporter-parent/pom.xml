@@ -47,11 +47,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		
 		<version.org.apache.poi>3.9</version.org.apache.poi>
+		<org.richfaces.bom.version>4.3.3.Final</org.richfaces.bom.version>
 	</properties>
 	
 	<modules>
 		<module>../jsf-exporter-core</module>
 		<module>../export-source-primefaces</module>
+		<module>../export-source-richfaces</module>
 		<module>../export-type-csv</module>
 		<module>../export-type-excel</module>
 		<module>../export-type-pdf</module>
@@ -69,6 +71,11 @@
 			<dependency>
 				<groupId>com.lapis.jsfexporter</groupId>
 				<artifactId>export-source-primefaces</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lapis.jsfexporter</groupId>
+				<artifactId>export-source-richfaces</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -111,6 +118,13 @@
 				<type>pom</type>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>  
+                <groupId>org.richfaces</groupId>  
+                <artifactId>richfaces-bom</artifactId>  
+                <version>${org.richfaces.bom.version}</version>  
+                <scope>import</scope>  
+                <type>pom</type>  
+            </dependency>
 			
 			<dependency>
 				<groupId>com.lowagie</groupId>
