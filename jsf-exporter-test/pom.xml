@@ -44,6 +44,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.lapis.jsfexporter</groupId>
+			<artifactId>export-source-jsf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.lapis.jsfexporter</groupId>
 			<artifactId>export-source-richfaces</artifactId>
 		</dependency>
 		<dependency>
