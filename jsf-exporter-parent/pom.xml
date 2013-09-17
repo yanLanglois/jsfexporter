@@ -54,6 +54,7 @@
 		<module>../jsf-exporter-core</module>
 		<module>../export-source-primefaces</module>
 		<module>../export-source-richfaces</module>
+		<module>../export-source-jsf</module>
 		<module>../export-type-csv</module>
 		<module>../export-type-excel</module>
 		<module>../export-type-pdf</module>
@@ -66,6 +67,11 @@
 			<dependency>
 				<groupId>com.lapis.jsfexporter</groupId>
 				<artifactId>jsf-exporter-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lapis.jsfexporter</groupId>
+				<artifactId>export-source-jsf</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
